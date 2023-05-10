@@ -31,6 +31,7 @@ app.appendChild(todoListTable);
 
 const clearTodos = () => {
     localStorage.clear();
+    location.reload();
 }
 
 for(let i = 0; i < todoList.length; i++) {
