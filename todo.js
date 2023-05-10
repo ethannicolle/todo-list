@@ -73,6 +73,7 @@ const submitTodo = (event) => {
         tdNewName.textContent = todoList[todoList.length -1].name
         trNew.appendChild(tdNewName);
         localStorage.setItem('todos', JSON.stringify(todoList));
+        todoTextInput.value = '';
     } else {
         todoErrorMessage.style.display = 'block';
     }
